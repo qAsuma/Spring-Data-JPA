@@ -29,6 +29,11 @@ public class ClientController {
     public String index(Model model) {
         model.addAttribute("people", clientService.findAll());
 
+//        accountService.findByEmail("slavikden2@gmail.com");
+//        accountService.findByOwner(clientService.findAll().get(0));
+//
+//
+//        clientService.test();
 
         return "/index";
     }
